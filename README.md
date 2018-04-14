@@ -6,7 +6,7 @@ The watermark pictrue is `fingerprint.jpg`.It will be processed by Median filter
 ## host pro-processing
 The host picture is `host.jpg`.It will be processed by RGB-to-YUV,uint8-to-float32.Because we will DCT on the Y dimension which means the value of brightness later,and DCT need float32.
 ## watermark embeds into the host
-1. Divide host into 8x8 blocks.
++ Divide host into 8x8 blocks.
 + Calculate `the average number` of fingerprint pixels to be stored for each 8x8 block.You can see output `r` is it.
 + Each block on the Y dimension DCT for the airspace change into frequency domain.Then we discuss the operation to 8x8 blocks in frequency + domain.
 + In a 8x8 block, the unit cell,and its symmetric unit cell of the center,become a pair,named r1,r2
